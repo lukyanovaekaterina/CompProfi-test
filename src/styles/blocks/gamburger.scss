@@ -1,0 +1,58 @@
+.gamburger{
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+  @media (max-width: 1024px){
+    .gamburger{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+        .gamburger__icon{
+       stroke: #191919;
+       fill: #191919;
+       height: 78px;
+       width: 120px; 
+
+       @media (max-width:480px){
+        height: 38px;
+        width: 60px;
+      }
+     }   
+     .menu-gamburger__content{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .menu-gamburger{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .gamburger__icon:hover .gamburger__list{
+      opacity: 1;
+    }
+    
+     .gamburger__list{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+        background: #fff;
+        padding: 0px;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .4s;
+     }
+     .gamburger__list:before{
+    content: "";
+     display: block;
+     left: 0;
+     right: 0;
+     position: absolute;
+     }
+
+  }

@@ -1,0 +1,133 @@
+.first{
+background-image: url(images/img/5fon_first.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+position: relative;
+width: 100vw;
+height: 78vh;
+justify-content: center;
+
+@media (max-width:768px){
+  height: 120vh;
+}
+
+&__content{
+  display: flex;
+  flex-direction: column;
+}
+
+&__title{
+  padding-top: 194px;
+
+  @media (max-width: 768px){
+    padding-top: 88px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  }
+  @media (max-width: 768px){
+    padding-top: 12px;
+  }
+
+}
+
+&__heading{
+  display: flex;
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.07;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+  @media (max-width: 768px){
+    justify-content: center;
+ }
+ @media (max-width: 480px){
+   font-size: 56px;
+  justify-content: center;
+}
+
+}
+
+&__message{
+  display: flex;
+  width: 1412px;
+  padding-top: 74px;
+  padding-bottom: 432px;
+  font-family: OpenSans;
+  font-size: 48px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+  @media (max-width: 768px){
+    width: 95vw;
+    font-size: 72px;
+    justify-content: center;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: 480px){
+    width: 95vw;
+    font-size: 36px;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+}
+
+&__button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+&__content-icons{
+  display: none;
+
+  @media (max-width: 768px){
+    display: flex;
+    justify-content: space-around;
+    padding-top: 137px;
+      }
+}
+
+&__icons{
+  fill: #f54243;
+  width: 126px;
+  height: 126px;
+ border-radius: 102px;
+
+ @media (max-width:480px){
+   width: 60px;
+   height: 60px;
+   border-radius: 60px;
+ }
+}
+
+.icon__box{
+ display: flex;
+width: 6.94rem;
+height: 6.94rem;
+border-radius: 50%;
+background: #ffffff;
+align-items: center;
+justify-content: center; 
+
+@media (max-width:480px){
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+}
+}
+
